@@ -1,30 +1,36 @@
-theme: cayman
+# Site settings
+title: Taylor Fraser
+subtitle: a Web Portfolio
+email: taylor.fraser@colorado.edu
+description: A web portfolio for film projects<br /> created, edited, shot, or produced by Taylor Fraser.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "taylorfraser.com" # the base hostname & protocol for your site
+author:
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: 123.123.1234
 
-name: Taylor Fraser's Web Portfolio
-description: A portfolio holding the various film projects created, edited, or produced by Taylor Fraser.
-author: Taylor Fraser
-author_email: you@example.com
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
 
-# The directory for category index pages. Change it to something else if
-# for example you want links like /categories/category1 instead of /category1
-category_dir: /
+# Social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: 
+googleplus_url: https://plus.google.com/
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/
 
-# Uncomment if you are planning to run the blog in a subdirectory
-# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
-# Example, you must use http://localhost:4000/path/to/blog
-#baseurl: /path/to/blog 
-baseurl: 
+# Build settings
+markdown: kramdown
 
-# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://taylorfraser.com
-
-#### Under the Hood Stuff #####
-
-# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
-permalink: pretty
-
-# How many articles do you wish to appear on the front page:
-paginate: 3
-
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+sass:
+  style: compressed
