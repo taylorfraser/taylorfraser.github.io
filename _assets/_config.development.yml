@@ -1,0 +1,11 @@
+assets:
+  css_compressor: sass
+  js_compressor: uglifier
+  cache:
+  cachebust: none
+  sources:
+    - css
+    - scripts
+    - _assets
+    - _assets/sass
+    - _assets/js

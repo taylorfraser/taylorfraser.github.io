@@ -6,11 +6,8 @@ description: A web portfolio for film projects<br /> created, edited, shot, or p
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "taylorfraser.com" # the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
 city: Nashville
 state: TN
-zip_code: 55555
-country: United States of America
 phone: 123.123.1234
 
 # Homepage tiles
@@ -21,7 +18,7 @@ tiles-count: 6
 500px_url:
 facebook_url:
 github_url:
-gitlab_url: 
+gitlab_url:
 googleplus_url: https://plus.google.com/
 instagram_url: https://instagram.com
 linkedin_url: https://www.linkedin.com/
@@ -34,3 +31,20 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+
+# defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "posts"
+      type: "posts" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "post" # overrides previous default layout
+      author: "Taylor"

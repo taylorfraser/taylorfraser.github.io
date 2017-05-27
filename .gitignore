@@ -1,0 +1,12 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+*.gem
+*.rbc
+.DS_Store
+._site
+/.config
+node_modules/
+gemfile
+gemfile.lock
