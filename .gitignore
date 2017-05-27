@@ -10,3 +10,4 @@ _site
 node_modules/
 gemfile
 gemfile.lock
+_assets

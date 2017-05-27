@@ -10,6 +10,10 @@ city: Nashville
 state: TN
 phone: 123.123.1234
 
+# url settings
+url: "http://taylorfraser.com"
+baseurl: ""
+
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 6

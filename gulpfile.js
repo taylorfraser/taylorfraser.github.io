@@ -11,12 +11,12 @@ var gulp           = require('gulp'),
 
 
 gulp.task('sass', function() {
-  return gulp.src('_assets/sass/**/*.scss')
+  return gulp.src('_assets/sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass()).on('error', sass.logError)
     .pipe(autoprefixer(supported))
-    .pipe(gulp.dest('css'))
-    .pipe(gulp.dest('_site/css'))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'))
     .pipe(browsersync.stream())
 });
 
